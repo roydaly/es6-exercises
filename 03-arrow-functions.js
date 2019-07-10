@@ -3,14 +3,14 @@
 
 var chips = {
   flavor: "Original Flavor",
-  getNewFlavor: function(flavorNum) {
+  getNewFlavor: function (flavorNum) {
     if (flavorNum === 1) {
-      function upgradeFlavor() {
+      upgradeFlavor = () => {
         this.flavor = "Extreme Kickin'";
       }
       upgradeFlavor();
     } else {
-      function downgradeFlavor() {
+      downgradeFlavor = () => {
         this.flavor = "Sea Salt"
       }
       downgradeFlavor();
@@ -20,4 +20,6 @@ var chips = {
 
 console.log(chips.flavor);
 chips.getNewFlavor(1);
+console.log(chips.flavor);
+chips.getNewFlavor();
 console.log(chips.flavor);
